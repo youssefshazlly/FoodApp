@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/lunch"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hope you have a great day "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+                <!--        Start Food Layout       -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/fod"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/burger"
+                    android:text="Food"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/groc"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/gro"
+                    android:text="Groceries"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="15dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/more"
+                    android:text="Groceries"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="15dp"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+                <!--        End Food Layout       -->
+
+
+
+        <!--   Start Top Picks Layout    -->
+        <!--   End Top Picks Layout    -->
+
+        <!--   Start  brand layout    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Top picks"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/burgerpicks" />
+
+                <TextView
+                    android:id="@+id/burlove"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/burger"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Burger Lovers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/pizaa"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/burlove"
+                    android:src="@drawable/pizaapicks" />
+
+                <TextView
+                    android:id="@+id/pizalove"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pizaa"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@id/burlove"
+                    android:text="Pizaa Lovers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/cacks"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/burger"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cakepicks" />
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cacks"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/pizalove"
+                    android:text="Desserts Lovers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/cacks2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/cacks"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cakepicks" />
+
+                <TextView
+                    android:id="@+id/de22"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cacks"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/des"
+                    android:text="Desserts Lovers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/cacks3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/cacks2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cakepicks" />
+
+                <ImageView
+                    android:id="@+id/cacks4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@id/cacks3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cakepicks" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cacks"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@id/de22"
+                    android:text="Desserts Lovers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <!--   End  brand layout    -->
+
+            <!--   Start AD  Layout   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:id="@+id/des2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/burlove"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/hardes" />
+        </LinearLayout>
+
+        <!--   End AD  Layout   -->
+
+        <!--    last Layout    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textSize="20sp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
